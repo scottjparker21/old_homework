@@ -1,0 +1,23 @@
+<style>
+p {
+    font-family: helvetica;
+    color: #696969;
+  }
+html, body {
+  background-color: #E8E8E8; margin: 0px;
+}
+#header {
+  background-color:lightgrey;
+  color:black;
+  text-align:center;
+  padding:5px;
+}
+h1 {
+  font-family: "Times New Roman", Times, serif; color: #000037
+}
+img {
+  max-width: 50%;
+  height: auto;
+  width: auto\9;
+}
+</style>
