@@ -1,6 +1,5 @@
 <?php
-class Oven
-{
+class Oven{
 
   $heatSource;
   $door;
@@ -38,8 +37,7 @@ class Oven
   }
 }
 ////////
-class GasRange extends Oven
-{
+class GasRange extends Oven{
   $stoveBurner;
   $ovenBurner;
   $door;
@@ -76,16 +74,10 @@ class GasRange extends Oven
     :
     //Sets oventemp to max
   }
+}
 
 /////////
-class ToasterOven extends Oven
-
-{
-  $heatCoil;
-  $onOffswitch;
-  $tempControl;
-  $shelf;
-  $crumbTray;
+class ToasterOven extends Oven{
 
 function lightToast()
 {
