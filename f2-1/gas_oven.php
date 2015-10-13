@@ -81,6 +81,29 @@ class ToasterOven extends Oven;
   $shelf
   $crumbTray
 }
+function lightToast(){
 
+  toast an item lightly.
+}
 
+function medToast(){
+
+  toast an item to a wonderful golden brown
+}
+function toastDark(){
+
+  almost burn an item
+}
+function emptycrumbTray (){
+  get rid of those crumbs. they are a fire hazard.
+}
+function toasterBroil (){
+  set heat coil to highest setting
+}
+function defrost (){
+  gently defrost item at low temp.
+}
+function setTimer (){
+  dictates time that heat coil will be on at given temp.
+}
  ?>
