@@ -2,108 +2,126 @@
 class Oven
 {
 
-  $heatSource
-  $door
-  $shelf
-  }
+  $heatSource;
+  $door;
+  $shelf;
+
 
   function currenttemp ()
-    { $currenttemp = $currenttemp + $
+    { //$currenttemp = $currenttemp + $;
 
     }
   function opendoor ()
     {
-
+      :
   }
   function turnon ()
   {
-    on
+    :
+    //on
   }
   function turnoff ()
   {
-    off
+    :
+    //off
   }
   function increasetemp ()
   {
-    +
+    :
+    //+
   }
 
   function decreasetemp ()
   {
-    -
+    :
+    //-
   }
+}
 ////////
-class GasRange extends Oven;
+class GasRange extends Oven
 {
-  $stoveBurner
-  $ovenBurner
-  $door
-  $pilotLight
-  $ovenLight
-  $ovenBroiler
-  $ovenTempknob
-  $stoveTempknob
-  $ovenFan
-  $shelf
+  $stoveBurner;
+  $ovenBurner;
+  $door;
+  $pilotLight;
+  $ovenLight;
+  $ovenBroiler;
+  $ovenTempknob;
+  $stoveTempknob;
+  $ovenFan;
+  $shelf;
 }
 
   function adjustshelf ()
   {
-    bottom,middle,top
+    :
   }
 
   function ignitestove ()
   {
-      designate burner;
-      front-left
-      front-right
-      back-left
-      back-right
+      //designate burner
+      //front-left
+      //front-right
+      //back-left
+      //back-right
     }
-  function adjustheat (){
-
-      applies to ovenTempknob and stoveTempknob
-
-        }
+  function adjustheat ()
+  {
+      :
+      //applies to ovenTempknob and stoveTempknob
+    }
 
   function broiler ()
   {
-    Sets oventemp to max
+    :
+    //Sets oventemp to max
   }
 
 /////////
-class ToasterOven extends Oven;
+class ToasterOven extends Oven
 
 {
-  $heatCoil
-  $onOffswitch
-  $tempControl
-  $shelf
-  $crumbTray
-}
-function lightToast(){
+  $heatCoil;
+  $onOffswitch;
+  $tempControl;
+  $shelf;
+  $crumbTray;
 
-  toast an item lightly.
+function lightToast()
+{
+  :
+  //toast an item lightly.
 }
 
-function medToast(){
-
-  toast an item to a wonderful golden brown
+function medToast()
+{
+  :
+  //toast an item to a wonderful golden brown
 }
-function toastDark(){
-
-  almost burn an item
+function toastDark()
+{
+  :
+  //almost burn an item
 }
-function emptycrumbTray (){
-  get rid of those crumbs. they are a fire hazard.
+function emptycrumbTray ()
+{
+  :
+  //get rid of those crumbs. they are a fire hazard.
 }
-function toasterBroil (){
-  set heat coil to highest setting
+function toasterBroil ()
+{
+  :
+  //set heat coil to highest setting
 }
-function defrost (){
-  gently defrost item at low temp.
+function defrost ()
+{
+  :
+  //gently defrost item at low temp.
 }
-function setTimer (){
-  dictates time that heat coil will be on at given temp.
+function setTimer ()
+{
+  :
+  //dictates time that heat coil will be on at given temp.
+}
 }
  ?>
