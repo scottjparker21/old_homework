@@ -1,19 +1,24 @@
 <script>
 
 function rotateadd(array) {
-  var rotate = 2;
+
   var fiveadded = [];
+  var rotatearray = [];
+  var offset = array.length - 2;
 
   for (var i in array){
     fiveadded[i] = array[i] + 5;
   }
+  for (var y=0; y < fiveadded.length; y++) {
+    var j = (y + offset) % fiveadded.length;
+    document.write(fiveadded[j] + ",");
+  }
 
-  document.write(fiveadded);
 }
 
 
-var nums = [1,2,3];
 
+var nums = [5,9,8,6];
 rotateadd(nums);
 
 </script>
