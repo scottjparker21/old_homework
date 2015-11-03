@@ -1,0 +1,50 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+<body>
+
+
+<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+<input type="text" id="month" size="2" value="" onkeyup="concatDate()">
+<input type="text" id="day" size="2" value="" onkeyup="concatDate()">
+<input type="text" id="year" size="4" value="" onkeyup="concatDate()">
+</form>
+
+<div id="clockdiv"></div>
+
+<script>
+function concatDate(){
+	var month = $("#month").val();
+	var day = $("#day").val();
+	var year = $("#year").val();
+	var userDate = new Date(month + "/" + day + "/" + year);
+	return userDate;
+}
+
+
+
+function time_remaining(endtime){
+	var t = Date.parse(endtime) - Date.parse(new Date());
+	var seconds = Math.floor( (t/1000) % 60 );
+	var minutes = Math.floor( (t/1000/60) % 60 );
+	var hours = Math.floor( (t/(1000*60*60)) % 24 );
+	var days = Math.floor( t/(1000*60*60*24) );
+	return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
+}
+function run_clock(id,endtime){
+	var clock = document.getElementById(id);
+		var t = time_remaining(endtime);
+		clock.innerHTML = 'days: '+t.days+'<br>hours: '+t.hours+'<br>minutes: '+t.minutes+'<br>seconds: '+t.seconds;
+		if(t.total<=0){ clearInterval(timeinterval); }
+}
+	var timeinterval = setInterval(function(){
+
+run_clock('clockdiv',concatDate());
+	},1000);
+
+
+</script>
+</body>
+</html>
