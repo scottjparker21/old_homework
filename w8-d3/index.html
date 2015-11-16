@@ -1,0 +1,30 @@
+
+<form method="post" action="phpemail.php">
+Please fill out all fields.<br>
+<br>
+First:<br>
+<input type="text" name="first">
+<br>
+Last:<br>
+<input type="text" name="last"><br>
+Email:<br>
+<input type="text" name="email"><br>
+Message:<br>
+<input type="text" name="message" maxlength="750" cols="12" rows="6"><br>
+<br>
+<input type="submit" value="Submit">
+
+</form>
+
+}
+
+<!-- if(!isset($_POST['first']) || !isset($_POST['last']) || !isset($_POST['email']) || !isset($_POST['message']))
+	{
+		// @mail($mailTo, $subject, $message, $phpformsite); 
+		died();
+		
+	}
+	else {
+		
+		echo "Good job dummie.";
+		} -->
